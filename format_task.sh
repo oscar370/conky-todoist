@@ -15,9 +15,9 @@ while IFS= read -r line; do
             date_part="${line%%||*}"
             task_part="${line#*||}"
             if [ -n "$date_part" ]; then
-                printf '${color #cba6f7}[%s] ${color #cdd6f4}%s\n' "$date_part" "$task_part"
+                printf '${color #cba6f7}• [%s] ${color #cdd6f4}%s\n' "$date_part" "$task_part"
             else
-                printf '${color #cdd6f4}→ %s\n' "$task_part"
+                printf '${color #cdd6f4}• %s\n' "$task_part"
             fi
             ;;
         *)

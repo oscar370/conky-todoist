@@ -76,7 +76,7 @@ install() {
 [Desktop Entry]
 Type=Application
 Name=Todoist Conky
-Exec=conky -c $CONFIG_DIR/concy.conf
+Exec=conky -c $CONFIG_DIR/conky.conf
 Comment=Todoist tasks widget
 X-GNOME-Autostart-enabled=true
 EOL
