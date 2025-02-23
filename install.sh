@@ -37,7 +37,7 @@ install() {
     echo "Downloading files..."
     curl -sL https://raw.githubusercontent.com/oscar370/conky-todoist/main/conky.conf -o "$CONFIG_DIR/conky.conf"
     curl -sL https://raw.githubusercontent.com/oscar370/conky-todoist/main/todoist_conky.py -o "$SCRIPT_DIR/todoist_conky.py"
-    curl -sL https://raw.githubusercontent.com/oscar370/conky-todoist/main/format_tasks.sh -o "$SCRIPT_DIR/format_tasks.sh"
+    curl -sL https://raw.githubusercontent.com/oscar370/conky-todoist/main/format_task.sh -o "$SCRIPT_DIR/format_tasks.sh"
 
     chmod +x "$SCRIPT_DIR"/*.sh
     chmod +x "$SCRIPT_DIR/todoist_conky.py"
